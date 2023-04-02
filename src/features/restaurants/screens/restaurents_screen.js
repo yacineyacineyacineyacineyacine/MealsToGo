@@ -2,7 +2,7 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, View, StatusBar } from "react-native";
 import { Searchbar } from "react-native-paper";
-import { RestaurentInfo } from "../components/restaurent-info_component";
+import { RestaurentInfoCard } from "../components/restaurent-info-card_component";
 export const RestaurentScreen = () => {
   return (
     <SafeAreaView style={styles(StatusBar.currentHeight).container}>
@@ -15,7 +15,7 @@ export const RestaurentScreen = () => {
         />
       </View>
       <View style={styles(StatusBar.currentHeight).list}>
-        <RestaurentInfo />
+        <RestaurentInfoCard />
       </View>
     </SafeAreaView>
   );
